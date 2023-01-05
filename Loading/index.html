@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <audio id="loading" src="music/music.mp3" autoplay="true" hidden="true" loop="true"></audio>
+<div class="img-center">
+    <img class="img-logo" src="img/logo.png">
+    
+</div>
+<div class="video-background" style="background: #000;">
+    <div class="video-foreground" id="YouTubeBackgroundVideoPlayer"></div>
+</div>
+
+<script async src="https://www.youtube.com/iframe_api"></script>
+<script async src="video.js"></script>
+
+
+<div class="gradient-border" id="box-staff">
+    <h1 class="title"><b>Métier</b></h1>
+    <hr>
+        
+        <div class="box-staff-founder2">
+            <img src="img/metier/lspd.png" class="img-staff">
+            <h1 class="name-staff">Police</h1>
+        </div>
+        <div class="box-staff-developer2">
+            <img src="img/metier/ambulancier.png" class="img-staff">
+            <h1 class="name-staff">EMS</h1>
+        </div>
+        <div class="box-staff-developer2">
+            <img src="img/metier/conces.png" class="img-staff">
+            <h1 class="name-staff">Concessionnaire</h1>
+        </div>
+        <div class="box-staff-administrator2">
+            <img src="img/metier/taxi.png" class="img-staff">
+            <h1 class="name-staff">Taxi</h1>
+        </div>
+        <div class="box-staff-moderator2">
+            <img src="img/metier/brinks.png" class="img-staff">
+            <h1 class="name-staff">Concessionnaire moto</h1>
+        </div>
+        <div class="box-staff-moderator2">
+            <img src="img/metier/vignerons.png" class="img-staff">
+            <h1 class="name-staff">Vignerons</h1>
+        </div>
+        <div class="box-staff-moderator2">
+            <img src="img/metier/fib.png" class="img-staff">
+            <h1 class="name-staff">FBI</h1>
+        </div>
+    </div>
+  </div>
+
+</div>
+    <div id="box-faq">
+        <h1 class="title"><b>Les touches RP</b></h1>
+        <hr class="line">
+        <div class="box-scroll">
+        <h1 class="name">
+            Muscle <span class="color">[ F1 ]</span> Téléphone
+        </h1><br>
+        <h1 class="name">
+            Muscle <span class="color">[ B ]</span> Montrer du doigt
+        </h1><br>
+        <h1 class="name">
+            Muscle <span class="color">[ ? ]</span> Ceinture de sécurité
+        </h1><br>
+        <h1 class="name">
+            Muscle <span class="color">[ F6 ]</span> Menu métier
+        </h1><br>
+        <h1 class="name">
+            Muscle <span class="color">[ F7 ]</span> Menu organisation
+        </h1><br>
+        <h1 class="name">
+            Muscle <span class="color">[ T ]</span> chat
+        </h1><br>
+        <h1 class="name">
+            Muscle <span class="color">[ N ]</span> Pour parler
+        </h1><br>
+        <h1 class="name">
+            Muscle <span class="color">[ CTRL ]</span> S'accroupir
+        </h1>
+        </div>
+      </div>
+      <div class="gradient-border" id="box-staff">
+        <h1 class="title"><b>Membre du staff</b></h1>
+        <hr>
+        <div>
+            <div class="box-staff-founder">
+                <img src="img/adico.png" class="img-staff2">
+                <h1 class="name-staff">Adico#8029</h1>
+                <h1 class="grade-staff">FONDATEUR</h1>
+            </div>
+            <div class="box-staff-developer">
+                <img src="img/adico.png" class="img-staff2">
+                <h1 class="name-staff">Adico#8029</h1>
+                <h1 class="grade-staff">DEVELOPPEUR</h1>
+            </div>
+            <div class="box-staff-administrator">
+                <img src="img/briz.png" class="img-staff">
+                <h1 class="name-staff">Briz#8692</h1>
+                <h1 class="grade-staff">Administrateur</h1>
+            </div>
+     <!--       <div class="box-staff-developer">
+                <img src="img/staff3.png" class="img-staff">
+                <h1 class="name-staff">Multi Développement</h1>
+                <h1 class="grade-staff">Developpeur</h1>
+            </div>
+            <div class="box-staff-moderator">
+                <img src="img/staff4.png" class="img-staff">
+                <h1 class="name-staff">Multi Développement</h1>
+                <h1 class="grade-staff">Modérateur</h1>
+            </div>
+            <div class="box-staff-Helper">
+                <img src="img/staff5.png" class="img-staff">
+                <h1 class="name-staff">Multi Développement</h1>
+                <h1 class="grade-staff">Helper</h1>
+            </div>
+            <div class="box-staff-Helper">
+                <img src="img/staff6.png" class="img-staff">
+                <h1 class="name-staff">Multi Développement</h1>
+                <h1 class="grade-staff">Helper</h1>
+            </div>
+            <div class="box-staff-Helper">
+                <img src="img/staff7.png" class="img-staff">
+                <h1 class="name-staff">Multi Développement</h1>
+                <h1 class="grade-staff">Helper</h1>
+            </div> -->
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+        <h1 class="discord">Discord: <a href="https://discord.gg/24kBe4sb6R" class="color-footer"> https://discord.gg/24kBe4sb6R
+            </a>
+        </h1>
+    </div>
+      
+<script>
+    var play = false;
+            var vid = document.getElementById("loading");
+            vid.volume = 0.1;
+            window.addEventListener('keyup', function(e)
+            {
+                if (e.which == 69){
+                    vid.volume = Math.min(vid.volume + 0.1,1);
+                } else if(e.which == 65){
+                    vid.volume = Math.max(vid.volume - 0.1,0);
+                };
+            });
+    
+            var audio = document.querySelector('audio');
+    
+            if (audio) {
+    
+            window.addEventListener('keydown', function (event) {
+    
+            var key = event.which || event.keyCode;
+    
+            if (key === 32) { // spacebar
+    
+            event.preventDefault();
+    
+            audio.paused ? audio.play() : audio.pause();
+          
+        }
+    
+      });
+    }
+    </script>
+    <script src='js/script.js'></script>
+</body>
+</html>
